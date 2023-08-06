@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Fenerbahçe");
             imageView.setImageResource(R.drawable.fb);
             checkBox2.setChecked(false);
+            Toast.makeText(MainActivity.this,"İşlem başarılı",Toast.LENGTH_LONG);
         }
     }
 
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Türkiye");
             imageView.setImageResource(R.drawable.tr);
             checkBox.setChecked(false);
+            Toast.makeText(MainActivity.this,"İşlem başarılı",Toast.LENGTH_LONG);
         }
     }
 
